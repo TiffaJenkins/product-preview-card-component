@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+
+<body>
+  <div class="main-container container-fluid d-flex flex-column align-content-center justify-content-center">
+    <div class="col-container container">
+      <div class="row">
+        <!--img col-->
+        <div class="img-col col-lg-6"></div>
+
+        <!--info col-->
+        <div class="info-col col-lg-6 p-4">
+          <h5 class="main-h5">PERFUME</h5>
+          <h1 class="main-h1 mb-3">Gabrielle Essence Eau<br> De Parfum</h1>
+          <p class="main-p">A floral, solar and voluptuous<br> interpretation compsed by<br> Oliver Polge, Perfumer-Creator<br> for the house of CHANEL.</p>
+          
+          <h1 class="price-h1 d-inline">$149.99</h1> 
+
+          <div class="icon-margin d-inline position-relative">
+            <p class="price-p d-inline-block text-decoration-line-through">$169.99</p>
+          </div>
+
+          <button class="main-button btn rounded-2 d-block mx-auto"><img class="cart-pic img-fluid" src="images/icon-cart.svg">Add to Cart</button>
+        </div>
+      </div><!--row-->
+    </div><!--container-->
+  </div><!--container-fluid-->
+  
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+</body>
+</html>

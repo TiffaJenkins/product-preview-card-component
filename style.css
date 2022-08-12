@@ -1,0 +1,149 @@
+/*-------------------------------Main container-------------------------------*/
+/*----------------------------------------------------------------------------*/
+.main-container {
+    min-height: 100vh;
+    background-color: hsl(34, 44%, 85%);
+}
+@media (max-width: 992px) {
+    .main-container {
+        height: 100%;
+    }
+}
+
+/*-------------------------------col container-------------------------------*/
+/*---------------------------------------------------------------------------*/
+.col-container {
+    max-height: 60vh;
+    width: 45%;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width: 992px) {
+    .col-container {
+        max-height: 100%;
+        width: 85%;
+    }
+}
+@media (min-width: 1400px) {
+    .col-container {
+        width: 35%;
+    }
+}
+
+.img-col {
+    background-image: url("images/image-product-desktop.jpg");
+    max-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0px 10px;
+}
+@media (max-width: 992px) {
+    .img-col {
+        background-image: url("images/image-product-mobile.jpg");
+        height: 30vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+/*--smaller img for more height--*/
+@media (min-height: 740px) and (max-width: 992px) {
+    .img-col {
+        height: 24vh;
+    }
+}
+
+/*--other exsisting column centered between widths for medium devices--*/
+@media (max-width: 992px) and (min-width: 420px) {
+    .info-col {
+        text-align: center;
+    }
+}
+
+/*--------------------------------fonts and styles--------------------------------*/
+/*--------------------------------------------------------------------------------*/
+.main-h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+}
+.main-h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 25px;
+    line-height: 24px;
+}
+.main-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    line-height: 19px;
+}
+.price-h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 25px;
+    color: hsl(158, 36%, 37%);
+}
+.price-p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    color: hsl(228, 12%, 48%);
+    position: relative;
+    top: -8px;
+    margin-left: 14px;
+}
+/*--button--*/
+.main-button {
+    background-color: hsl(158, 36%, 37%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: white;
+    margin-bottom: 5px;
+    padding: 10px 70px 10px 70px;
+    white-space: nowrap;
+}
+@media (min-width: 1430px) {
+    .main-button {
+        padding: 10px 65px 10px 65px;
+    }
+}
+@media (max-width: 992px) {
+    .main-button {
+        font-size: 12px;
+        padding: 12px 80px 12px 80px;
+    }
+}
+@media (max-width: 365px) {
+    .main-button {
+        font-size: 10px;
+        padding: 10px 50px 10px 50px;
+    }
+}
+/*--size fix for between these px sizes--*/
+@media (min-width: 992px) and (max-width: 1170px) {
+    .main-button {
+        padding: 10px 50px 10px 50px;
+    }
+}
+
+/*--cart image--*/
+.cart-pic {
+    height: 13px;
+    width: 11px;
+    margin-right: 6px;
+    margin-bottom: 2px;
+}
+
+/*--br cancel--*/
+@media (max-width: 1090px) and (min-width: 992px) {
+    br {
+        display: none;
+    }
+}
+/*--very small width cancel--*/
+@media (max-width: 415px) {
+    br {
+        display: none;
+    }
+}
